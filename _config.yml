@@ -1,8 +1,8 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
-avatar: /avatar.jpeg
+title: Chanwoo Kim
+description: KCW personal channel
+url: https://chanwo0kim.github.io/
+avatar: /picture.jpg
 paginate: 5
 permalink: pretty
 cover_image: /bg.jpeg
@@ -53,7 +53,7 @@ sass:
 # disqus: xxxxxx
 
 # Specify the author for blog posts
-author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+# author:
+#   name: Songzi Vong
+#   url: https://github.com/vszhub/
+#   email: vszhub@gmail.com
