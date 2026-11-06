@@ -1,3 +1,329 @@
----
-layout: home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chanwoo Kim</title>
+<meta name="description" content="Chanwoo Kim, research intern at KIST. Robot learning for dexterous manipulation and 3D vision.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2328;
+    --muted: #59636e;
+    --accent: #1a5fb4;
+    --rule: #e4e7eb;
+    --card: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --text: #e6e8eb;
+      --muted: #9aa3ad;
+      --accent: #78aeff;
+      --rule: #2a2f37;
+      --card: #171a20;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 48px 20px 64px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1 { font-size: 2rem; margin: 0 0 4px; font-weight: 600; letter-spacing: -0.01em; }
+  h1 .ko { font-weight: 400; color: var(--muted); font-size: 1.4rem; margin-left: 8px; }
+  h2 {
+    font-size: 1.25rem; font-weight: 600; margin: 48px 0 16px;
+    padding-bottom: 6px; border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 12px; }
+  .intro { display: flex; gap: 32px; align-items: flex-start; }
+  .intro .text { flex: 1; min-width: 0; }
+  .intro img { width: 168px; height: auto; border-radius: 8px; flex-shrink: 0; }
+  .role { color: var(--muted); margin: 0 0 16px; }
+  .links { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 6px 18px; font-weight: 500; }
+  .news { list-style: none; padding: 0; margin: 0; }
+  .news li { display: flex; gap: 16px; padding: 3px 0; }
+  .news .date { color: var(--muted); width: 72px; flex-shrink: 0; font-variant-numeric: tabular-nums; }
+  .item { display: flex; gap: 24px; margin-bottom: 36px; align-items: flex-start; }
+  .item .media { width: 300px; flex-shrink: 0; display: flex; flex-direction: column; gap: 10px; }
+  .item .media img, .item .media video {
+    width: 100%; height: auto; display: block; border-radius: 6px;
+    border: 1px solid var(--rule); background: var(--card);
+  }
+  .item .media .cap { font-size: 0.8rem; color: var(--muted); line-height: 1.4; margin-top: -4px; }
+  .item .body { flex: 1; min-width: 0; }
+  .title { font-weight: 600; font-size: 1.05rem; margin-bottom: 2px; }
+  .authors { margin-bottom: 2px; }
+  .authors b { font-weight: 600; }
+  .venue { color: var(--muted); font-style: italic; margin-bottom: 6px; }
+  .tag {
+    display: inline-block; font-size: 0.75rem; font-weight: 600; font-style: normal;
+    padding: 1px 8px; border-radius: 999px; background: var(--card); border: 1px solid var(--rule);
+    color: var(--muted); margin-left: 6px; vertical-align: 1px;
+  }
+  .plinks { margin-bottom: 8px; }
+  .plinks a { margin-right: 12px; font-weight: 500; }
+  .plinks a::before { content: "["; color: var(--muted); }
+  .plinks a::after { content: "]"; color: var(--muted); }
+  .cv-list { list-style: none; padding: 0; margin: 0; }
+  .cv-list li { display: flex; gap: 16px; padding: 4px 0; }
+  .cv-list .when { color: var(--muted); width: 180px; flex-shrink: 0; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .cv-list .what { flex: 1; min-width: 0; }
+  .sub { color: var(--muted); }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; }
+  @media (max-width: 680px) {
+    main { padding: 32px 16px 48px; }
+    .intro { flex-direction: column-reverse; gap: 16px; }
+    .intro img { width: 128px; }
+    .item { flex-direction: column; gap: 12px; }
+    .item .media { width: 100%; }
+    .cv-list li, .news li { flex-direction: column; gap: 0; }
+    .cv-list .when, .news .date { width: auto; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <section class="intro">
+    <div class="text">
+      <h1>Chanwoo Kim<span class="ko">김찬우</span></h1>
+      <p class="role">Research Intern, AI-Robot Research Center, Korea Institute of Science and Technology (KIST)</p>
+      <p>
+        I am a research intern at the AI-Robot Research Center of the
+        <a href="https://www.kist.re.kr/eng/index.do">Korea Institute of Science and Technology (KIST)</a>,
+        working with Dr. Hwasup Lim. I received my M.S. in AI-Robotics from the University of Science and
+        Technology (UST), KIST School, and my B.S. in Mathematics and B.Eng. in Big Data from Kyungpook
+        National University.
+      </p>
+      <p>
+        My research is on robot learning for dexterous manipulation. I am interested in how robots can learn
+        new, complex tasks from a few teleoperated demonstrations, and how the 3D structure of a scene can
+        guide the generation of additional training data. Before moving to robotics, I worked on 3D vision,
+        including the 3D understanding of two hands manipulating objects and editable 4D scene generation
+        with Gaussian Splatting.
+      </p>
+      <p><b>I am applying to PhD programs for Fall 2027.</b></p>
+      <div class="links">
+        <a href="mailto:sky9739a@gmail.com">Email</a>
+        <!-- <a href="assets/cv.pdf">CV</a>  (add the updated CV as assets/cv.pdf, then uncomment) -->
+        <a href="https://www.linkedin.com/in/chanwoo-kim-784418227/">LinkedIn</a>
+        <!-- <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> -->
+      </div>
+    </div>
+    <img src="assets/profile.jpg" alt="Photo of Chanwoo Kim">
+  </section>
+
+  <h2>News</h2>
+  <ul class="news">
+    <li><span class="date">Oct 2026</span><span><a href="https://arxiv.org/abs/2610.21668">Edit4D</a> is available on arXiv.</span></li>
+    <li><span class="date">Jul 2026</span><span>Started a research internship at KIST on humanoid manipulation.</span></li>
+    <li><span class="date">Mar 2026</span><span>Presented <a href="https://openaccess.thecvf.com/content/WACV2026/html/Heryanto_Splatter_Layout_Geometry-embedded_3D_Reconstruction_via_Surface_Unfolding_WACV_2026_paper.html">Splatter Layout</a> at WACV 2026 in Tucson, AZ.</span></li>
+  </ul>
+
+  <h2>Current Project</h2>
+
+  <div class="item" id="teleop">
+    <div class="media">
+      <video src="assets/rope_teleop.mp4" poster="assets/rope_teleop.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <div class="cap">Bimanual rope manipulation through teleoperation, in simulation (stereo views, 2&times; speed).</div>
+      <video src="assets/wholebody_teleop.mp4" poster="assets/wholebody_teleop.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <div class="cap">Whole-body VR teleoperation of a humanoid in simulation: operator, simulator, and stereo egocentric views (2&times; speed).</div>
+    </div>
+    <div class="body">
+      <div class="title">Teleoperation and Data Generation for Dexterous Humanoid Manipulation</div>
+      <div class="venue">Ongoing project, KIST <span class="tag">Robot learning</span></div>
+      <p>
+        I built a whole-body teleoperation pipeline in Isaac Sim for a humanoid with dexterous hands, using a
+        PICO VR headset and MANUS Metagloves Pro Haptic gloves. I have used it for whole-body tasks and for
+        bimanual deformable-object manipulation such as rope knotting.
+      </p>
+      <p>
+        Collecting many demonstrations for every new task is not practical, so I am now working on an agentic
+        AI approach that expands a few teleoperated demonstrations into a larger set of training data, with a
+        focus on how the 3D structure of the scene should be taken into account during generation.
+      </p>
+    </div>
+  </div>
+
+  <h2>Publications</h2>
+
+  <div class="item" id="edit4d">
+    <div class="media">
+      <a href="https://chanwo0kim.github.io/Edit4D/"><img src="assets/edit4d_teaser.jpg" alt="Edit4D pipeline and editing examples"></a>
+    </div>
+    <div class="body">
+      <div class="title"><a href="https://chanwo0kim.github.io/Edit4D/">Edit4D: Editable 4D Scene Generation with Textual Control</a></div>
+      <div class="authors"><b>Chanwoo Kim</b>, Tackgeun You, Hwasup Lim</div>
+      <div class="venue">arXiv, 2026</div>
+      <div class="plinks">
+        <a href="https://arxiv.org/abs/2610.21668">Paper</a>
+        <a href="https://chanwo0kim.github.io/Edit4D/">Project Page</a>
+      </div>
+      <p>
+        Edit4D generates a 4D scene from a text instruction by generating a background scene and a dynamic
+        character separately and composing them in 4D Gaussian Splatting. Because the two parts stay
+        separate, the character or the background can be edited after generation without regenerating the
+        whole scene.
+      </p>
+    </div>
+  </div>
+
+  <div class="item" id="text4d-human">
+    <div class="body">
+      <div class="title"><a href="https://journal.kci.go.kr/jksci/archive/articleView?artiId=ART003329458">Text-Controlled 4D Human Generation</a></div>
+      <div class="authors"><b>Chanwoo Kim</b>, Sanghun Kim, Hwasup Lim</div>
+      <div class="venue">Journal of the Korea Society of Computer and Information (KCI), 2026</div>
+      <div class="plinks">
+        <a href="https://journal.kci.go.kr/jksci/archive/articleView?artiId=ART003329458">Paper</a>
+      </div>
+      <p>
+        A text-to-4D human generation pipeline that separates appearance and motion diffusion and combines
+        multi-view expansion with Gaussian Splatting-based 4D reconstruction.
+      </p>
+    </div>
+  </div>
+
+  <div class="item" id="splatter-layout">
+    <div class="media">
+      <img src="assets/splatter_layout.jpg" alt="Splatter Layout method overview">
+    </div>
+    <div class="body">
+      <div class="title"><a href="https://openaccess.thecvf.com/content/WACV2026/html/Heryanto_Splatter_Layout_Geometry-embedded_3D_Reconstruction_via_Surface_Unfolding_WACV_2026_paper.html">Splatter Layout: Geometry-embedded 3D Reconstruction via Surface Unfolding</a></div>
+      <div class="authors">Bryan Heryanto, Tackgeun You, <b>Chanwoo Kim</b>, Hwasup Lim</div>
+      <div class="venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2026</div>
+      <div class="plinks">
+        <a href="https://openaccess.thecvf.com/content/WACV2026/html/Heryanto_Splatter_Layout_Geometry-embedded_3D_Reconstruction_via_Surface_Unfolding_WACV_2026_paper.html">Paper</a>
+      </div>
+      <p>
+        A single-view, feed-forward method that predicts Gaussian splats, normals, and UV maps on an unfolded
+        surface layout. From this layout, 3D splats, point clouds, and meshes can be reconstructed and used
+        for animation and appearance editing.
+      </p>
+    </div>
+  </div>
+
+  <div class="item" id="mim-da">
+    <div class="body">
+      <div class="title"><a href="https://arxiv.org/abs/2501.08408">Leveraging 2D Masked Reconstruction for Domain Adaptation of 3D Pose Estimation</a></div>
+      <div class="authors">Hansoo Park, <b>Chanwoo Kim</b>, Jihyeon Kim, Hoseong Cho, Nhat Nguyen Bao Truong, Taehwan Kim, Seungryul Baek</div>
+      <div class="venue">arXiv, 2025</div>
+      <div class="plinks">
+        <a href="https://arxiv.org/abs/2501.08408">Paper</a>
+      </div>
+      <p>
+        An unsupervised domain adaptation framework for 3D human and hand pose estimation that uses
+        unlabeled images through masked image modeling, with foreground-centric reconstruction and attention
+        regularization.
+      </p>
+    </div>
+  </div>
+
+  <div class="item" id="ebts">
+    <div class="body">
+      <div class="title"><a href="https://arxiv.org/abs/2312.09139">Class-Wise Buffer Management for Incremental Object Detection: An Effective Buffer Training Strategy</a></div>
+      <div class="authors">Junsu Kim, Sumin Hong, <b>Chanwoo Kim</b>, Jihyeon Kim, Yihalem Yimolal Tiruneh, Jeongwan On, Jihyun Song, Sunhwa Choi, Seungryul Baek</div>
+      <div class="venue">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024</div>
+      <div class="plinks">
+        <a href="https://arxiv.org/abs/2312.09139">Paper</a>
+      </div>
+      <p>
+        A buffer training strategy for class-incremental object detection that builds an optimized replay
+        buffer instead of relying on random sampling.
+      </p>
+    </div>
+  </div>
+
+  <div class="item" id="rmfer">
+    <div class="media">
+      <img src="assets/rmfer_wacv24.jpg" alt="Contrastive learning with reaction mashup videos">
+    </div>
+    <div class="body">
+      <div class="title"><a href="https://openaccess.thecvf.com/content/WACV2024/html/Cho_RMFER_Semi-Supervised_Contrastive_Learning_for_Facial_Expression_Recognition_With_Reaction_WACV_2024_paper.html">RMFER: Semi-supervised Contrastive Learning for Facial Expression Recognition with Reaction Mashup Video</a></div>
+      <div class="authors">Yunseong Cho, <b>Chanwoo Kim</b>, Hoseong Cho, Yunhoe Ku, Eunseo Kim, Muhammadjon Boboev, Joonseok Lee, Seungryul Baek</div>
+      <div class="venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2024 <span class="tag">Oral</span><span class="tag">Best Paper Award Finalist</span></div>
+      <div class="plinks">
+        <a href="https://openaccess.thecvf.com/content/WACV2024/html/Cho_RMFER_Semi-Supervised_Contrastive_Learning_for_Facial_Expression_Recognition_With_Reaction_WACV_2024_paper.html">Paper</a>
+        <a href="https://github.com/yunseongcho/RMFER">Code</a>
+      </div>
+      <p>
+        A semi-supervised contrastive learning framework that learns facial expression features from
+        unlabeled reaction mashup videos, in which several people react to the same scene, by using faces
+        from the same moment as positive pairs.
+      </p>
+    </div>
+  </div>
+
+  <div class="item" id="h2otr">
+    <div class="media">
+      <img src="assets/h2otr_cvpr23.jpg" alt="Pose estimation and interaction recognition for two hands manipulating objects">
+    </div>
+    <div class="body">
+      <div class="title"><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Cho_Transformer-Based_Unified_Recognition_of_Two_Hands_Manipulating_Objects_CVPR_2023_paper.html">Transformer-based Unified Recognition of Two Hands Manipulating Objects</a></div>
+      <div class="authors">Hoseong Cho, <b>Chanwoo Kim</b>, Jihyeon Kim, Seongyeong Lee, Elkhan Ismayilzada, Seungryul Baek</div>
+      <div class="venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023</div>
+      <div class="plinks">
+        <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Cho_Transformer-Based_Unified_Recognition_of_Two_Hands_Manipulating_Objects_CVPR_2023_paper.html">Paper</a>
+      </div>
+      <p>
+        A unified Transformer framework that estimates the 3D poses of two hands and an object, the object
+        type, and the hand-object interaction class from egocentric video. Contact maps between the hands and
+        the object are used to recognize the interaction.
+      </p>
+    </div>
+  </div>
+
+  <div class="item" id="hbha">
+    <div class="body">
+      <div class="title"><a href="https://arxiv.org/abs/2210.11384">Transformer-based Global 3D Hand Pose Estimation in Two Hands Manipulating Objects Scenarios</a></div>
+      <div class="authors">Hoseong Cho, Donguk Kim, <b>Chanwoo Kim</b>, Seongyeong Lee, Seungryul Baek</div>
+      <div class="venue">Technical report, ECCV 2022 HBHA Challenge <span class="tag">1st Place</span></div>
+      <div class="plinks">
+        <a href="https://arxiv.org/abs/2210.11384">Report</a>
+      </div>
+      <p>
+        Our first-place solution for egocentric 3D hand pose estimation: end-to-end Transformer-based
+        estimation of the global 3D poses of two hands interacting with an object.
+      </p>
+    </div>
+  </div>
+
+  <h2>Awards</h2>
+  <ul class="cv-list">
+    <li><span class="when">Jan 2024</span><span class="what">Best Paper Award Finalist, WACV 2024 (RMFER, oral presentation)</span></li>
+    <li><span class="when">Oct 2022</span><span class="what">1st Place, ECCV 2022 HBHA Challenge, Egocentric 3D Hand Pose Estimation</span></li>
+    <li><span class="when">2021</span><span class="what">5th Place (5/380), Traffic Hand Signal Recognition AI Competition, Dacon</span></li>
+    <li><span class="when">2021</span><span class="what">7th Place (7/491), Ego-Vision Hand Gesture Recognition AI Competition, Dacon</span></li>
+    <li><span class="when">2021</span><span class="what">Excellence Award, Daegyeong Regional University Programming Contest, Kyungpook National University</span></li>
+  </ul>
+
+  <h2>Education</h2>
+  <ul class="cv-list">
+    <li><span class="when">Mar 2024 &ndash; Aug 2026</span><span class="what"><b>M.S. in AI-Robotics</b>, University of Science and Technology (UST), KIST School<br><span class="sub">Advisor: Dr. Hwasup Lim &middot; GPA 4.5/4.5</span></span></li>
+    <li><span class="when">Mar 2016 &ndash; Feb 2022</span><span class="what"><b>B.S. in Mathematics</b> and <b>B.Eng. in Big Data</b> (interdisciplinary major), Kyungpook National University<br><span class="sub">GPA 3.68/4.3 &middot; Major GPA 3.98/4.3</span></span></li>
+  </ul>
+
+  <h2>Experience</h2>
+  <ul class="cv-list">
+    <li><span class="when">Jul 2026 &ndash; Present</span><span class="what"><b>Research Intern</b>, AI-Robot Research Center, KIST<br><span class="sub">Teleoperation and data generation for dexterous humanoid manipulation</span></span></li>
+    <li><span class="when">Jan 2024 &ndash; Feb 2024</span><span class="what"><b>Research Intern</b>, KIST<br><span class="sub">Text-to-4D generation</span></span></li>
+    <li><span class="when">2022 &ndash; 2023</span><span class="what"><b>Student Researcher</b>, Ulsan National Institute of Science and Technology (UNIST)<br><span class="sub">3D hand pose estimation and hand-object interaction &middot; Advisor: Prof. Seungryul Baek</span></span></li>
+    <li><span class="when">Aug 2020 &ndash; May 2021</span><span class="what"><b>Undergraduate Research Intern</b>, Kyungpook National University<br><span class="sub">Advisor: Prof. Hayoung Choi</span></span></li>
+  </ul>
+
+  <h2>Patents</h2>
+  <ul class="cv-list">
+    <li><span class="when">Jun 2026</span><span class="what">Edit4D: Text-Controlled Editable 4D Scene Generation. Korean Patent Application No. 10-2026-0099875 (pending)</span></li>
+    <li><span class="when">May 2026</span><span class="what">Splatter Layout: Surface Unfolding-based 3D Reconstruction with Inherent Geometry. Korean Patent Application No. 10-2026-0086335 (pending)</span></li>
+  </ul>
+
+  <footer>Last updated November 2026.</footer>
+</main>
+</body>
+</html>
